@@ -181,7 +181,7 @@ section {
 
 .pic-container {
     display: flex;
-    height: 600px;
+    height: 650px;
     width: 600px;
     margin: auto 0;
     position: relative;
@@ -189,26 +189,27 @@ section {
 }
 
 .profile-picture {
-    width: 70%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 600px; /* Limit the maximum size */
-    border-radius: 50%; /* Make it a circle */
+    width: 70%; 
+    height: auto; 
+    max-width: 600px;
+    border-radius: 50%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: rotateBorder 4s ease-in-out  infinite; 
+    object-fit: cover;
   }
 
   @keyframes rotateBorder {
     0% {
-      border-color: rgba(0, 0, 255, 0.5); /* Initial color */
-      transform: rotate(0deg); /* No rotation */
+      border-color: rgba(0, 0, 255, 0.5); 
+      transform: rotate(0deg); 
     }
     50% {
-      border-color: rgba(0, 0, 255, 0.5); /* Same color */
-      transform: rotate(5deg); /* Rotate to the right */
+      border-color: rgba(0, 0, 255, 0.5); 
+      transform: rotate(5deg); 
     }
     100% {
-      border-color: rgba(0, 0, 255, 0.5); /* Same color */
-      transform: rotate(0deg); /* Return to initial rotation */
+      border-color: rgba(0, 0, 255, 0.5); 
+      transform: rotate(0deg); 
     }
 }
 .section-text {
